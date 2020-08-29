@@ -1,4 +1,4 @@
-package com.aki.designpattern.单例模式_.饿汉式;
+package com.aki.designpattern.单例模式.饿汉式;
 
 public class SingletonPattern {
     private String content;

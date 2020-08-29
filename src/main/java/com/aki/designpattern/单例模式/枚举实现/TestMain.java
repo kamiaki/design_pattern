@@ -1,4 +1,4 @@
-package com.aki.designpattern.单例模式_.枚举实现;
+package com.aki.designpattern.单例模式.枚举实现;
 
 
 public class TestMain {

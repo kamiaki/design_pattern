@@ -1,4 +1,4 @@
-package com.aki.designpattern.单例模式_.静态内部类;
+package com.aki.designpattern.单例模式.静态内部类;
 
 public class SingletonPattern {
     private String content;
