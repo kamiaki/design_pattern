@@ -3,6 +3,10 @@ package com.aki.designpattern.单例模式.懒汉式;
 public class SingletonPattern {
     private String content;
 
+    private SingletonPattern(){
+
+    }
+
     public String getContent() {
         return content;
     }
