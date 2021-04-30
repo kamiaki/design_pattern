@@ -1,0 +1,12 @@
+package com.aki.designpattern.行为型.访问者模式.element;
+
+import com.aki.designpattern.行为型.访问者模式.elementVisitor.ElementVisitor;
+
+//具体元素-引擎
+public class Engine implements Element {
+
+    @Override
+    public void accept(ElementVisitor visitor) {
+        visitor.visit(this);
+    }
+}
