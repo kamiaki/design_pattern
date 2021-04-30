@@ -11,5 +11,9 @@ public class TestMain {
 
         Shape circle2 = circle1.clone();
         circle2.draw();
+        Shape circle3 = circle1.clone();
+        circle3.draw();
+        Shape circle4 = circle1.clone();
+        circle4.draw();
     }
 }
