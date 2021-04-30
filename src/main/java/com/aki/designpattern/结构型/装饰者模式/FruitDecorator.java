@@ -4,7 +4,7 @@ package com.aki.designpattern.结构型.装饰者模式;
  * 装饰器具体实现
  */
 public class FruitDecorator extends Decorator {
-    Sweet sweet;
+    private Sweet sweet;
 
     public FruitDecorator(Sweet sweet) {
         this.sweet = sweet;

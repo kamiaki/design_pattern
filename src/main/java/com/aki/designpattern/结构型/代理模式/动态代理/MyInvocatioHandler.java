@@ -19,7 +19,11 @@ class MyInvocatioHandler implements InvocationHandler {
         System.out.println("-----end-----");
         return result;
     }
-    // 生成代理对象
+
+    /**
+     * 生成代理对象
+     * @return
+     */
     public Object getProxy() {
         ClassLoader loader = Thread.currentThread().getContextClassLoader();
         Class<?>[] interfaces = target.getClass().getInterfaces();

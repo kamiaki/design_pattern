@@ -6,26 +6,22 @@ import com.aki.designpattern.结构型.适配器模式.advancedMediaPlayer.VlcPl
 
 public class MediaAdapter implements MediaPlayer {
 
-   AdvancedMediaPlayer advancedMusicPlayer;
+    AdvancedMediaPlayer advancedMusicPlayer;
 
-   public MediaAdapter(String audioType){
+    public MediaAdapter(String audioType) {
+        if (audioType.equalsIgnoreCase("vlc")) {
+            advancedMusicPlayer = new VlcPlayer();
+        } else if (audioType.equalsIgnoreCase("mp4")) {
+            advancedMusicPlayer = new Mp4Player();
+        }
+    }
 
-      if(audioType.equalsIgnoreCase("vlc") ){
-         advancedMusicPlayer = new VlcPlayer();
-
-      }else if (audioType.equalsIgnoreCase("mp4")){
-         advancedMusicPlayer = new Mp4Player();
-      }
-   }
-
-   @Override
-   public void play(String audioType, String fileName) {
-
-      if(audioType.equalsIgnoreCase("vlc")){
-         advancedMusicPlayer.playVlc(fileName);
-      }
-      else if(audioType.equalsIgnoreCase("mp4")){
-         advancedMusicPlayer.playMp4(fileName);
-      }
-   }
+    @Override
+    public void play(String audioType, String fileName) {
+        if (audioType.equalsIgnoreCase("vlc")) {
+            advancedMusicPlayer.playVlc(fileName);
+        } else if (audioType.equalsIgnoreCase("mp4")) {
+            advancedMusicPlayer.playMp4(fileName);
+        }
+    }
 }
