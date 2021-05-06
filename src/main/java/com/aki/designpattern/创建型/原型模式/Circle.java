@@ -7,5 +7,8 @@ public class Circle extends Shape {
 
     public void draw() {
         System.out.println("Draw a " + type + ", fill with " + fillColor + ", frame color is " + frameColor + ", inner text is [" + innerText + "].");
+        System.out.println(obj.getAA() + obj.getBB());
+        System.out.println(obj.hashCode());
+        System.out.println(System.identityHashCode(obj));
     }
 }

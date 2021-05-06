@@ -6,14 +6,14 @@ public class TestMain {
         Shape circle1 = new Circle();
         circle1.setFillColor("red");
         circle1.setFrameColor("green");
-        circle1.setInnerText("Design patterns");
+        circle1.setInnerText("D啊啊啊啊啊啊啊");
+        Obj obj = new Obj();
+        obj.setAA("aa");
+        obj.setBB("bbbbb不不不");
+        circle1.setObj(obj);
         circle1.draw();
 
         Shape circle2 = circle1.clone();
         circle2.draw();
-        Shape circle3 = circle1.clone();
-        circle3.draw();
-        Shape circle4 = circle1.clone();
-        circle4.draw();
     }
 }

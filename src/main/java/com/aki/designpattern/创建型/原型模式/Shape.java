@@ -8,10 +8,14 @@ public abstract class Shape implements Cloneable {
     protected String fillColor;
     protected String frameColor;
     protected String innerText;
+    protected Obj obj;
 
     @Override
     public Shape clone() throws CloneNotSupportedException {
-        return (Shape) super.clone();
+        Shape shape = (Shape) super.clone();
+        // 不加这一句的话就是浅拷贝，只是拷贝了obj这个指针
+        shape.setObj(this.obj.clone());
+        return shape;
     }
 
     public abstract void draw();
