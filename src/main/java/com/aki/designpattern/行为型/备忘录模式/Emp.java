@@ -1,8 +1,15 @@
 package com.aki.designpattern.行为型.备忘录模式;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 /**
  * 发起人
  */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Emp {
     private String name;
     private int age;
@@ -18,35 +25,5 @@ public class Emp {
         this.name = empMemento.getName();
         this.age = empMemento.getAge();
         this.salary = empMemento.getSalary();
-    }
-
-    public Emp(String name, int age, double salary) {
-        this.name = name;
-        this.age = age;
-        this.salary = salary;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public double getSalary() {
-        return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
     }
 }
