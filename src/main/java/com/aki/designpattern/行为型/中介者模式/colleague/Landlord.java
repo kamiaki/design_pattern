@@ -1,4 +1,6 @@
-package com.aki.designpattern.行为型.中介者模式;
+package com.aki.designpattern.行为型.中介者模式.colleague;
+
+import com.aki.designpattern.行为型.中介者模式.Mediator.AbstractMediator;
 
 public class Landlord extends AbstractColleague {
 

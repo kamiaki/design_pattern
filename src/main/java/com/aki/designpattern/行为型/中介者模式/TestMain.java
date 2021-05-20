@@ -1,6 +1,10 @@
 package com.aki.designpattern.行为型.中介者模式;
 
 
+import com.aki.designpattern.行为型.中介者模式.Mediator.Mediator;
+import com.aki.designpattern.行为型.中介者模式.colleague.Landlord;
+import com.aki.designpattern.行为型.中介者模式.colleague.Tenant;
+
 public class TestMain {
     public static void main(String[] args) {
         //当租客想要租房，房东想要出租房，那么他们都需要到中介那边注册信息
