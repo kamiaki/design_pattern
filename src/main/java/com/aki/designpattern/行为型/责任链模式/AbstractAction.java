@@ -1,18 +1,13 @@
 package com.aki.designpattern.行为型.责任链模式;
 
- public abstract class AbstractAction implements Action{
+import lombok.Data;
 
-    public Action action;
+@Data
+public abstract class AbstractAction implements Action {
+    private Action action;
+
     @Override
     public void todo(String type) {
-
-        System.out.println("我是总部,你们处理不了就给我处理!!" + "处理" +type);
-    }
-
-    public Action getAction() {
-        return action;
-    }
-    public void setAction(Action action) {
-        this.action = action;
+        System.out.println("我是总部,你们处理不了就给我处理!!" + "处理" + type);
     }
 }
