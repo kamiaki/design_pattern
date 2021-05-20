@@ -11,6 +11,7 @@ class ConcreteIterator implements Iterator {
         this.list = list;
     }
 
+    @Override
     public boolean hasNext() {
         if (index < list.size() - 1) {
             return true;
@@ -19,12 +20,14 @@ class ConcreteIterator implements Iterator {
         }
     }
 
+    @Override
     public Object first() {
         index = 0;
         Object obj = list.get(index);
         return obj;
     }
 
+    @Override
     public Object next() {
         Object obj = null;
         if (this.hasNext()) {
