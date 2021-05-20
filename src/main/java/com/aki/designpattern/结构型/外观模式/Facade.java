@@ -7,8 +7,8 @@ public class Facade {
     private SubSystemThree three;
     private SubSystemFour four;
 
-    public Facade() {
-        this.one = new SubSystemOne();
+    public Facade(SubSystemOne one) {
+        this.one = one;
         this.two = new SubSystemTwo();
         this.three = new SubSystemThree();
         this.four = new SubSystemFour();
