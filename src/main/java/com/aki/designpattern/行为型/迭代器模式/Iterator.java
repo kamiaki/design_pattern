@@ -1,7 +1,8 @@
 package com.aki.designpattern.行为型.迭代器模式;
 
-public interface Iterator { //创建接口
-    boolean hasNext();
-
+//抽象迭代器
+interface Iterator {
+    Object first();
     Object next();
+    boolean hasNext();
 }
