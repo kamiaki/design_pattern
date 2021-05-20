@@ -8,6 +8,7 @@ public class Facade {
     private SubSystemFour four;
 
     public Facade(SubSystemOne one) {
+        // 这里是我的小调整 不该这样
         this.one = one;
         this.two = new SubSystemTwo();
         this.three = new SubSystemThree();
